@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let p = new Promise((resolve, reject) => {
+            let a = 1 + 1
+            if (a === 2){
+                resolve("done")
+            }
+            else{
+                reject("fail")
+            }
+            // if (a === 2){
+            //     resolve("sachu che")
+            // }
+            // else{
+            //     reject("khotu che")
+            // }
+
+        })
+        // console.log(p);
+
+        p.then((msg)=>{
+            console.log("this is " + msg);
+        }).catch((msg)=>{
+            console.log("this is " + msg);
+        })
+
+        // p.then((result)=>{
+        //     console.log("aa " + result);
+        // }).catch((result)=>{
+        //     console.log("naa " + result);
+        // })
+
+    </script>
+
+</body>
+
+</html>
